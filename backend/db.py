@@ -7,16 +7,16 @@ POSTGRES_DB=os.getenv("POSTGRES_DB")
 POSTGRES_USER=os.getenv("POSTGRES_USER")
 POSTGRES_PASSWORD=os.getenv("POSTGRES_PASSWORD")
 POSTGRES_PORT=os.getenv("POSTGRES_PORT")
+POSTGRES_HOST=os.getenv("POSTGRES_HOST")
 
-url_connection = f'postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}@db:{POSTGRES_PORT}/{POSTGRES_DB}'
-#url_connection = f'postgresql://postgres.hyslmnplykcqfmjqvxvx:{POSTGRES_PASSWORD}@aws-0-us-west-1.pooler.supabase.com:5432/postgres'
+url_connection = f'postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}'
+
 engine = create_engine(url_connection)
 try:
     with engine.connect() as connection_str:
         print('Successfully connected to the PostgreSQL database')
         Session = sessionmaker(bind=engine)
         session = Session()
-
         Base.metadata.create_all(engine)
 
 except Exception as ex:

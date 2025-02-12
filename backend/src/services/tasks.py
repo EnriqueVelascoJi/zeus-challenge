@@ -1,17 +1,24 @@
 from db import session
 from ..models.tasks import Task
-
+from sqlalchemy.exc import NoResultFound
+from uuid import UUID
 
 
 def retrieve_tasks(): #Get all tasks from DB
-
-    data = session.query(Task).all()
+    try:
+        data = session.query(Task).all()
+    except: 
+        return None
     return data
 
 def retrieve_task(id): #Get a task by id from DB
     try:
-        data = session.query(Task).get(id)
-    except: 
+        UUID(id)
+    except ValueError:
+        return None
+    try:
+        data = session.query(Task).filter(Task.id == id).one()
+    except NoResultFound:
         return None
     return data
 
