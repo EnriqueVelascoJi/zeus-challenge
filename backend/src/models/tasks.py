@@ -13,3 +13,6 @@ class Task(Base):
     title = Column(String(100), nullable=False)
     description = Column(String, nullable=True)
     is_completed = Column(Boolean, nullable=False, default=False)
+
+    def to_dict(self):
+        return {"id": self.id, "title": self.title, "description": self.description, "is_completed": self.is_completed}
