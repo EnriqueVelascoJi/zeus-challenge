@@ -72,7 +72,7 @@ _Ahora puedes ver la API desplegada en la sigueinte liga_
 _Ahora puedes ver la DOC API desplegada en la sigueinte liga_
 
 
-[https://fastapi-example-ngas.onrender.com//docs](https://fastapi-example-ngas.onrender.com//docs)
+[https://fastapi-example-ngas.onrender.com/docs](https://fastapi-example-ngas.onrender.com/docs)
 
 
 _La DB se desplego en prod usando SUPABASE_
