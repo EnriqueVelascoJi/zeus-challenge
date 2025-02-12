@@ -8,10 +8,13 @@ export default function TaskForm({flag, setFlag}) {
 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    const [isLoading, setIsLoading] = useState(false)
+
 
 
     const addTask = async (e) => {
         e.preventDefault();
+        setIsLoading(true)
         const newTask = {
             title,
             description
@@ -28,10 +31,11 @@ export default function TaskForm({flag, setFlag}) {
             if(result) {
                 setFlag(Math.random())
             }
-
+            setIsLoading(false)
         } catch (error) {
             console.error("An unexpected error occurred", error)
         }
+        setIsLoading(false)
        
     };
 
@@ -74,7 +78,11 @@ export default function TaskForm({flag, setFlag}) {
             type="submit"
             className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
             >
-            Add Task
+             {isLoading ? (
+                    <div className="w-5 h-5 border-4 border-t-transparent border-blue-500 rounded-full animate-spin mx-auto"></div>
+                ) : (
+                    'Add Task'
+                )}
             </button>
         </form>
         </>
