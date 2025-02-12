@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 export default function TaskList({flag, setFlag}) {
     
-    const url = "http://localhost:8000/v1/tasks"
+    const url = "https://fastapi-example-ngas.onrender.com/v1/tasks"
 
     const [tasks, setTasks] = useState([])
 

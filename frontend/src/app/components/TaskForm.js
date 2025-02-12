@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 export default function TaskForm({flag, setFlag}) {
     
-    const url = "http://localhost:8000/v1/tasks"
+    const url = "https://fastapi-example-ngas.onrender.com/v1/tasks"
 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
