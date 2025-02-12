@@ -61,7 +61,7 @@ _Ahora puedes ver la DOC API desplegada en la sigueinte liga_
 _Ahora puedes ver el proyecto desplegado en la sigueinte liga_
 
 
-[https://zeus-challenge-7qlih5hph-velascoenrique396gmailcoms-projects.vercel.app/](https://zeus-challenge-7qlih5hph-velascoenrique396gmailcoms-projects.vercel.app/)
+[https://zeus-challenge.vercel.app/](https://zeus-challenge.vercel.app/)
 
 _Ahora puedes ver la API desplegada en la sigueinte liga_
 
