@@ -85,7 +85,7 @@ _La DB se desplego en prod usando SUPABASE_
 
 _Te adjunto una liga para que veas su funcionamiento_
 
-* [DEMO](https://drive.google.com/file/d/1pWSeZr5ocZ47Cr9TgZlJ63abqCQq3VFZ/view?usp=sharing)
+* [DEMO](https://drive.google.com/file/d/15Dq8yqUjMxs3voMC255UuQQSFhROhLgr/view?usp=sharing)
 
 
 
