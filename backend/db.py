@@ -10,6 +10,7 @@ POSTGRES_PORT=os.getenv("POSTGRES_PORT")
 
 # url_connection = f'postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@db.vgmnnonyynccbvfwjrgf.supabase.co:{POSTGRES_PORT}/{POSTGRES_DB}'
 url_connection = f'postgresql://postgres.vgmnnonyynccbvfwjrgf:[{POSTGRES_PASSWORD}]@aws-0-us-west-1.pooler.supabase.com:5432/postgres'
+print(url_connection)
 engine = create_engine(url_connection)
 try:
     with engine.connect() as connection_str:
