@@ -28,7 +28,7 @@ git clone https://github.com/EnriqueVelascoJi/zeus-challenge.git
 _Accede a la cerptea_
 
 ```
-cd Zeus-challenge
+cd zeus-challenge
 ```
 
 
@@ -44,36 +44,36 @@ docker-compose up --build
 _Ahora puedes ver el proyecto desplegado en la sigueinte liga_
 
 ```
-http://localhost:3000/
+[http://localhost:3000/](http://localhost:3000/)
 ```
 _Ahora puedes ver la API desplegada en la sigueinte liga_
 
 ```
-http://localhost:8000/
+[http://localhost:8000/](http://localhost:8000/)
 ```
 
 _Ahora puedes ver la DOC API desplegada en la sigueinte liga_
 
 ```
-http://localhost:8000/docs
+[http://localhost:8000/docs](http://localhost:8000/docs)
 ```
 
 ## Para producción
 _Ahora puedes ver el proyecto desplegado en la sigueinte liga_
 
 ```
-https://zeus-challenge-7vcunnctn-velascoenrique396gmailcoms-projects.vercel.app/
+[https://zeus-challenge-7vcunnctn-velascoenrique396gmailcoms-projects.vercel.app/](https://zeus-challenge-7vcunnctn-velascoenrique396gmailcoms-projects.vercel.app/)
 ```
 _Ahora puedes ver la API desplegada en la sigueinte liga_
 
 ```
-https://fastapi-example-ngas.onrender.com/
+[https://fastapi-example-ngas.onrender.com/](https://fastapi-example-ngas.onrender.com/)
 ```
 
 _Ahora puedes ver la DOC API desplegada en la sigueinte liga_
 
 ```
-https://fastapi-example-ngas.onrender.com//docs
+[https://fastapi-example-ngas.onrender.com//docs](https://fastapi-example-ngas.onrender.com//docs)
 ```
 
 _La DB se desplego en prod usando SUPABASE_
